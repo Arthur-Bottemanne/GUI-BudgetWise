@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script src="../../helper/helper.js"></script>
+    <script src="../../../helper/helper.js"></script>
 
     <script
       src="https://kit.fontawesome.com/3eb46088b9.js"
@@ -11,30 +11,23 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../../public/css/styles.css" />
-    <link rel="stylesheet" href="../../../public/css/tempStyles.css" />
-    <title>New Budget - 1</title>
+    <link rel="stylesheet" href="../../../../public/css/styles.css" />
+    <link rel="stylesheet" href="../../../../public/css/tempStyles.css" />
+    <title>New Expense - 1</title>
   </head>
   <body
     class="m-0 p-0 w-screen h-screen overflow-hidden bg-body-gray font-body"
   >
     <main class="px-2.5 pt-9 pb-14">
-      <a href="/src/pages/budgets.html" class="cursor-pointer"
+      <a href="/src/pages/addTransaction/step1.html" class="cursor-pointer"
         ><i class="fa-solid fa-arrow-left fa-2xl"></i
       ></a>
 
-      <h1 class="text-4xl font-sans-bold pl-1 pt-1 mt-12 mb-9">
-        What is this budget for?
+      <h1 class="text-4xl font-sans-bold pl-1 pt-1 my-12">
+        Which budget does it concern?
       </h1>
 
-      <div include="../../components/steps/nameInput.html"></div>
-
-      <a href="/src/pages/addBudget/step2.html">
-        <div
-          class="mt-8"
-          include="../../components/steps/nextButton.html"
-        ></div>
-      </a>
+      <div include="../../../components/steps/budgets.html"></div>
     </main>
 
     <script>

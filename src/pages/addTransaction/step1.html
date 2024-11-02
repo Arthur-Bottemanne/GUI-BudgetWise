@@ -13,28 +13,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../../public/css/styles.css" />
     <link rel="stylesheet" href="../../../public/css/tempStyles.css" />
-    <title>New Budget - 3</title>
+    <title>New Transaction</title>
   </head>
   <body
     class="m-0 p-0 w-screen h-screen overflow-hidden bg-body-gray font-body"
   >
     <main class="px-2.5 pt-9 pb-14">
-      <a href="/src/pages/addBudget/step2.html" class="cursor-pointer"
+      <a href="/src/pages/home.html" class="cursor-pointer"
         ><i class="fa-solid fa-arrow-left fa-2xl"></i
       ></a>
 
-      <h1 class="text-4xl font-sans-bold pl-1 pt-1 mt-12 mb-9">
-        Which color would you like to use?
+      <h1 class="text-4xl font-sans-bold pl-1 pt-1 my-12">
+        What type of transaction is this?
       </h1>
 
-      <div include="../../components/steps/colors.html"></div>
-
-      <a href="/src/pages/addBudget/step4.html">
-        <div
-          class="relative mt-11"
-          include="../../components/steps/nextButton.html"
-        ></div>
-      </a>
+      <div include="../../components/steps/transactionType.html"></div>
     </main>
 
     <script>
