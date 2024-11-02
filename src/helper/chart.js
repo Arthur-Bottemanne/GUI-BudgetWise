@@ -1,4 +1,4 @@
-const chartOptions = {
+const lineChartOptions = {
   chart: {
     height: "100%",
     maxWidth: "100%",
@@ -73,6 +73,67 @@ const chartOptions = {
   },
 };
 
-var chart = new ApexCharts(document.querySelector("#chart"), chartOptions);
+const donutChartOptions = {
+  series: [35.1, 33, 18.8],
+  colors: ["#595959", "#02A8B9", "#B602B9"],
+  chart: {
+    height: 320,
+    width: "100%",
+    type: "donut",
+  },
+  stroke: {
+    colors: ["transparent"],
+  },
+  plotOptions: {
+    pie: {
+      donut: {
+        size: "70%",
+      },
+    },
+  },
+  grid: {
+    padding: {
+      top: -2,
+    },
+  },
+  dataLabels: {
+    enabled: false,
+  },
+  legend: {
+    show: false,
+  },
+  yaxis: {
+    labels: {
+      formatter: function (value) {
+        return value + "k";
+      },
+    },
+  },
+  xaxis: {
+    labels: {
+      formatter: function (value) {
+        return value + "k";
+      },
+    },
+    axisTicks: {
+      show: false,
+    },
+    axisBorder: {
+      show: false,
+    },
+  },
+};
 
-chart.render();
+var lineChart = new ApexCharts(
+  document.querySelector("#line-chart"),
+  lineChartOptions
+);
+
+var donutChart = new ApexCharts(
+  document.querySelector("#donut-chart"),
+  donutChartOptions
+);
+
+lineChart.render();
+
+donutChart.render();
