@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="../helper/helper.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/3eb46088b9.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../public/css/styles.css" />
+    <link rel="stylesheet" href="../../public/css/tempStyles.css" />
+    <title>Transactions</title>
+  </head>
+  <body
+    class="m-0 p-0 w-screen h-screen overflow-hidden bg-body-gray font-body"
+  >
+    <div include="../components/navbar.html"></div>
+
+    <main class="px-2.5 pt-9 pb-14">
+      <h1 class="text-4xl font-sans-bold pl-1 pt-1 mb-6">Transactions</h1>
+
+      <div include="../components/balance/balance.html" class="mb-8"></div>
+
+      <div include="../components/transaction/transactions.html"></div>
+    </main>
+
+    <script>
+      includeHTML();
+    </script>
+  </body>
+</html>
