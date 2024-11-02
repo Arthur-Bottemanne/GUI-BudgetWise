@@ -1,0 +1,11 @@
+# Node modules
+node_modules/
+
+# temp styles
+public/css/tempStyles
+
+# Tailwind and PostCSS cache
+*.cache
+
+# Package lock files (optional)
+package-lock.json
