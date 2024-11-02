@@ -4,13 +4,20 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Montserrat", "sans-serif"],
-        body: ["Lato", "sans-serif"],
+        sans: ["Montserrat"],
+        bold: ["Montserrat-bold"],
+        body: ["Lato"],
       },
       colors: {
-        primary: "#3490dc",
-        secondary: "#ffed4a",
-        accent: "#38c172",
+        "primary-green": "#2E7D32",
+        "secondary-green": "#8BBD75",
+        "primary-red": "#E63E3E",
+        "body-gray": "#F0F0F0",
+        "primary-gray": "#323236",
+        "secondary-gray": "#83848B",
+      },
+      boxShadow: {
+        navbar: "0 10px 10px 4px rgb(0, 0, 0)",
       },
     },
   },
